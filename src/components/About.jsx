@@ -79,7 +79,7 @@ const Section = styled.section`
       li {
         display: flex;
         align-items: center;
-        justify-content: center; /* Add to separate text and icon */
+        justify-content: center;
         margin: 3rem 0;
         .icon {
           padding: 0.5rem;
@@ -123,6 +123,9 @@ const Section = styled.section`
       .title {
         h1 {
           font-size: 2rem;
+          text-align: center;
+        }
+        h3 {
           text-align: center;
         }
       }

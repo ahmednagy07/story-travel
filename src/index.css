@@ -16,7 +16,7 @@ body {
 
 @media screen and (min-width: 280px) and (max-width: 1080px) {
   body {
-    margin: 0rem;
+    margin: 0.3rem;
   }
 }
 

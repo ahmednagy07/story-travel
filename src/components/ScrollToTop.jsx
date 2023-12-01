@@ -59,6 +59,7 @@ const Div = styled.div`
     transition: 0.4s ease-in-out;
     z-index: 1;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
     @media screen and (min-width: 280px) and (max-width: 1080px) {
       left: 75vw;
       right: initial;
@@ -78,6 +79,8 @@ const Circle = styled.div`
   svg {
     color: white;
     font-size: 1.5rem;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
   }
 `;
 

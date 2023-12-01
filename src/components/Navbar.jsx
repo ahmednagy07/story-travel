@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdClose } from "react-icons/md";
-import Logo from "../assets/logo1.gif";
+import Logo from "../assets/logo2.gif";
 
 export default function Navbar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -114,6 +114,7 @@ const Container = styled.nav`
   .brand {
     img {
       cursor: pointer;
+      width: 150px;
     }
   }
 

@@ -80,14 +80,14 @@ export default function Destinations() {
 
 const Section = styled.section`
   display: flex;
-  overflow: hidden; /* Prevent potential overflow issues */
+  overflow: hidden;
 
   .info {
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center vertically */
-    align-items: center; /* Center horizontally */
+    justify-content: center;
+    align-items: center;
 
     h2 {
       font-size: 3rem;
@@ -109,7 +109,12 @@ const SliderContainer = styled.div`
   position: relative;
   overflow: hidden;
   border-radius: 10px;
-  height: 100vh; /* Set the height of the container to 100% of the viewport height */
+  height: 90vh;
+
+  @media screen and (max-width: 1080px) {
+    height: 70vh;
+
+  }
 `;
 
 const Slide = styled.div`
@@ -130,10 +135,10 @@ const Slide = styled.div`
 
   img {
     width: auto;
-    height: 500px; /* Set a fixed height of 300 pixels */
-    object-fit: cover; /* Maintain aspect ratio and cover the available space */
+    height: 500px;
+    object-fit: cover;
     border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for a better visual appeal */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   }
 
   @media screen and (max-width: 1080px) {

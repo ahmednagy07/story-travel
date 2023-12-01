@@ -10,7 +10,7 @@ export default function Home() {
       <div className="content">
         <div className="info">
           <h1>
-            تمتع بتجربة سفر متكاملة وعروض خاصة <br /> مع شركة ستوري ترافيل{" "}
+            تمتع بتجربة سفر متكاملة وعروض خاصة <br /> مع شركة ستوري ترافل{" "}
           </h1>
         </div>
       </div>
@@ -96,13 +96,12 @@ const Section = styled.section`
     }
   }
 
-  @media screen and (min-width: 280px) and (max-width: 768px) {
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
     .background {
       img {
         height: 50vh;
       }
     }
-
     .content {
       .info {
         margin-left: 1rem;
@@ -110,6 +109,8 @@ const Section = styled.section`
         h1 {
           font-size: 1.5rem;
           margin-bottom: 1rem;
+          padding-right: 30px;
+
         }
       }
 

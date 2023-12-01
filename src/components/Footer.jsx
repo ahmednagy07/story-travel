@@ -1,5 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+import { SiGooglemaps } from "react-icons/si";
+import { MdEmail } from "react-icons/md";
+import { FaPhoneAlt } from "react-icons/fa";
 
 export default function Footer() {
   const quickLinks = [
@@ -13,7 +16,11 @@ export default function Footer() {
     <Container>
       <div className="upper-footer">
         <div className="col">
-          <h2>فروعنا</h2>
+          <h2>
+            عنوان
+            <br />
+            <span>الشركة</span>
+          </h2>
           <ul>
             <li>
               <h3>
@@ -23,6 +30,7 @@ export default function Footer() {
             </li>
             {quickLinks.map((link) => (
               <li key={link.title}>
+                <SiGooglemaps />
                 <a
                   href={link.link}
                   target="_blank"
@@ -44,10 +52,12 @@ export default function Footer() {
             </h2>
           </div>
           <ul className="contact-info">
-            <li>
+            <li className="phone">
+              <FaPhoneAlt className="icon" />
               <span> +965 22281215 </span>
             </li>
-            <li>
+            <li className="email">
+              <MdEmail className="icon" />
               <span>sales@storytravelkw.com</span>
             </li>
           </ul>
@@ -89,12 +99,12 @@ const Container = styled.footer`
       flex-direction: column;
       gap: 2rem;
       color: var(--secondary-text);
-      align-items: center; 
+      align-items: center;
       justify-content: center;
 
       h2 {
         color: #225377;
-        text-align: center; 
+        text-align: center;
       }
 
       ul {
@@ -106,7 +116,7 @@ const Container = styled.footer`
         li {
           cursor: pointer;
           transition: var(--default-transition);
-          text-align: center; 
+          text-align: center;
 
           &:hover {
             color: var(--primary-color);
@@ -131,6 +141,26 @@ const Container = styled.footer`
 
         li {
           text-align: center;
+          display: flex;
+          align-items: center;
+
+          .icon {
+            margin-right: 5px; /* Adjust the spacing between the icon and text */
+            height: 20px;
+            width: auto;
+          }
+        }
+
+        .phone {
+          span {
+            margin-left: 5px; /* Adjust the spacing between the icon and text */
+          }
+        }
+
+        .email {
+          span {
+            margin-left: 5px; /* Adjust the spacing between the icon and text */
+          }
         }
       }
     }
@@ -152,6 +182,9 @@ const Container = styled.footer`
     margin: 2rem;
     .upper-footer {
       grid-template-columns: 1fr;
+      .col {
+        padding-top: 15px;
+      }
     }
   }
 `;
