@@ -96,6 +96,7 @@ const Section = styled.section`
   @media screen and (max-width: 1080px) {
     .services {
       grid-template-columns: repeat(2, 1fr); /* Set to 2 columns for medium screens */
+      max-width: 332px; 
       img {
         height: 300px;
         max-width: 300px;
