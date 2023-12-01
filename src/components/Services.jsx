@@ -99,7 +99,7 @@ const Section = styled.section`
 
       
       img {
-        height: auto;
+        height: 100%;
         width: 100%;
       }
     }
