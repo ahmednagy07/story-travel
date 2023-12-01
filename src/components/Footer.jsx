@@ -136,8 +136,8 @@ const Container = styled.footer`
 
       .contact-info {
         list-style: none;
-        padding: 0;
-        margin: 0;
+        padding-top: 0px;
+        margin-bottom: 30px;
 
         li {
           text-align: center;
@@ -153,13 +153,13 @@ const Container = styled.footer`
 
         .phone {
           span {
-            margin-left: 5px; /* Adjust the spacing between the icon and text */
+            margin-left: 5px;
           }
         }
 
         .email {
           span {
-            margin-left: 5px; /* Adjust the spacing between the icon and text */
+            margin-left: 5px;
           }
         }
       }
