@@ -98,7 +98,7 @@ const Section = styled.section`
       grid-template-columns: repeat(2, 1fr); /* Set to 2 columns for medium screens */
 
       service {
-        max-width: 300px;
+        width: 60%;
         height: 300px;
       }
       img {
