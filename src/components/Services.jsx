@@ -81,7 +81,7 @@ const Section = styled.section`
 
       img {
         height: 300px;
-        width: 100%;
+        width: 300px;
       }
 
       transition: var(--default-transition);
@@ -98,7 +98,7 @@ const Section = styled.section`
       grid-template-columns: repeat(2, 1fr); /* Set to 2 columns for medium screens */
       img {
         height: 300px;
-        width: 80%;
+        max-width: 300px;
       }
     }
   }
