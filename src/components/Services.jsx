@@ -81,7 +81,7 @@ const Section = styled.section`
 
       img {
         height: 300px;
-        width: 300px;
+        width: 100%;
       }
 
       transition: var(--default-transition);
@@ -96,13 +96,14 @@ const Section = styled.section`
   @media screen and (max-width: 1080px) {
     .services {
       grid-template-columns: repeat(2, 1fr); /* Set to 2 columns for medium screens */
+
       service {
-        max-width: 332px;
+        width: 300px;
+        height: 300px;
       }
-  
       img {
         height: 300px;
-        max-width: 300px;
+        width: 100%;
       }
     }
   }
