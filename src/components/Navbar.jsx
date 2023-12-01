@@ -101,9 +101,7 @@ const Container = styled.nav`
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
   }
 
-  .btn span {
-    margin-left: 10px;
-  }
+
 
   .btn:hover {
     background-color: #225377;
