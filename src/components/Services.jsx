@@ -98,14 +98,14 @@ const Section = styled.section`
       grid-template-columns: repeat(2, 1fr); /* Set to 2 columns for medium screens */
       img {
         height: 300px;
-        width: 100%;
+        width: 80%;
       }
     }
   }
 
   @media screen and (max-width: 768px) {
     .services {
-      grid-template-columns: 1fr; /* Set to 1 column for smaller screens */
+      grid-template-columns: 1fr;
     }
   }
 
