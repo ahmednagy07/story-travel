@@ -66,7 +66,7 @@ const Section = styled.section`
   }
 
   .content {
-    text-align: right;
+    text-align: center;
     .title {
       margin: 2rem 0;
       h3 {

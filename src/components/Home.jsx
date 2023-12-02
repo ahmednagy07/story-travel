@@ -19,7 +19,7 @@ export default function Home() {
 }
 
 const Section = styled.section`
-  margin-top: 2rem;
+
   position: relative;
 
   .background {

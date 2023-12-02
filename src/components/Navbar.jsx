@@ -112,7 +112,7 @@ const Container = styled.nav`
   .brand {
     img {
       cursor: pointer;
-      width: 150px;
+      width: 180px;
     }
   }
 
