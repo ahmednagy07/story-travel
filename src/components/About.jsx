@@ -79,8 +79,8 @@ const Section = styled.section`
       li {
         display: flex;
         align-items: center;
-        justify-content: center;
-        margin: 3rem 0;
+        justify-content: right; 
+        margin: 2rem 0;
         .icon {
           padding: 0.5rem;
           border-radius: 1rem;
@@ -123,9 +123,6 @@ const Section = styled.section`
       .title {
         h1 {
           font-size: 2rem;
-          text-align: center;
-        }
-        h3 {
           text-align: center;
         }
       }
