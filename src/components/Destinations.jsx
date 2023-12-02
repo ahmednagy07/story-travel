@@ -110,10 +110,6 @@ const SliderContainer = styled.div`
   overflow: hidden;
   border-radius: 10px;
   height: 90vh;
-
-  @media screen and (max-width: 1920px) {
-    height: 60vh;
-  }
   `;
 
 const Slide = styled.div`

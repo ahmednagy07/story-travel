@@ -66,7 +66,7 @@ const Section = styled.section`
   }
 
   .content {
-    text-align: center;
+    text-align: right;
     .title {
       margin: 2rem 0;
       h3 {
@@ -103,7 +103,7 @@ const Section = styled.section`
           color: #fff;
         }
         .text {
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             color: #a7cf4a; 
         }
       }
@@ -120,10 +120,10 @@ const Section = styled.section`
       }
     }
     .content {
+      text-align: center;
       .title {
         h1 {
           font-size: 2rem;
-          text-align: center;
         }
       }
       .list {
