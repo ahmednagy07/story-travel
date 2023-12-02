@@ -112,10 +112,10 @@ const SliderContainer = styled.div`
   height: 90vh;
 
   @media screen and (max-width: 1080px) {
-    height: 75vh;
+    height: 70vh;
 
   }
-`;
+  `;
 
 const Slide = styled.div`
   position: absolute;
