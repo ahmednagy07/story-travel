@@ -112,8 +112,7 @@ const SliderContainer = styled.div`
   height: 90vh;
 
   @media screen and (max-width: 1080px) {
-    height: 70vh;
-
+    height: 75vh;
   }
   `;
 
