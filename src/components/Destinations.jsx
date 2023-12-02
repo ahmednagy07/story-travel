@@ -111,8 +111,8 @@ const SliderContainer = styled.div`
   border-radius: 10px;
   height: 90vh;
 
-  @media screen and (max-width: 1080px) {
-    height: 75vh;
+  @media screen and (max-width: 1920px) {
+    height: 60vh;
   }
   `;
 
