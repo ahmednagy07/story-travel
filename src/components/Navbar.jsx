@@ -150,6 +150,12 @@ const Container = styled.nav`
     background-color: white;
 
     @media screen and (max-width: 1080px) {
+      .brand {
+        img {
+          cursor: pointer;
+          width: 180px;
+        }
+      }
       position: absolute;
       overflow-x: hidden;
       top: 0;
