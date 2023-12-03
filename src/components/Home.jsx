@@ -75,13 +75,13 @@ const Section = styled.section`
     color: #fff;
     display: flex;
     align-items: center;
-    width: 130px;
+    width: 135px;
     height: 39px;
     padding: 0.2rem 1rem;
     border-radius: 25px;
     background-color: #a7cf4a;
     border: 3px solid #a7cf4a;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: #fff;
     font-weight: bold;
     cursor: pointer;
@@ -95,7 +95,7 @@ const Section = styled.section`
   .btn {
     display: flex;
     align-items: center;
-    width: 130px;
+    width: 135px;
     height: 39px;
     padding: 0.2rem 1rem;
     border-radius: 25px;
