@@ -1,7 +1,23 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import HeroImage from "../assets/plane.jpg";
+import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
+
 
 export default function Home() {
+  const handleWhatsappClick = () => {
+    const message = "مرحبا .. انا مهتم بخدماتكم";
+
+    const whatsappURL = `https://wa.me/${+96522281215}?text=${encodeURIComponent(
+      message
+    )}`;
+
+    window.open(whatsappURL, "_blank");
+  };
+
+  const handlePhoneClick = () => {
+    window.location.href = "tel:+96522281215";
+  };
+
   return (
     <Section>
       <div className="background">
@@ -10,16 +26,36 @@ export default function Home() {
       <div className="content">
         <div className="info">
           <h1>
-            تمتع بتجربة سفر متكاملة وعروض خاصة <br /> مع شركة ستوري ترافل{" "}
+            تمتع بتجربة سفر متكاملة وعروض خاصة <br /> مع شركة ستوري ترافل
           </h1>
+          <div className="btn-container">
+            <button className="btn" onClick={handlePhoneClick}>
+              <span>اتصل بنا</span>
+              <FaPhoneAlt className="icon" />
+            </button>
+            <button onClick={handleWhatsappClick} className="whatsapp-btn">
+              <span>واتس آب</span>
+              <FaWhatsapp className="icon" />
+            </button>
+          </div>
         </div>
       </div>
     </Section>
   );
 }
 
-const Section = styled.section`
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
 
+const Section = styled.section`
   position: relative;
 
   .background {
@@ -27,6 +63,49 @@ const Section = styled.section`
       height: 90vh;
       width: 100%;
     }
+  }
+
+  .btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .whatsapp-btn {
+    margin-left: 10px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    width: 130px;
+    height: 39px;
+    padding: 0.2rem 1rem;
+    border-radius: 25px;
+    background-color: #a7cf4a;
+    border: 3px solid #a7cf4a;
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .icon {
+    padding-left: 10px;
+    font-size: 2rem;
+  }
+
+  .btn {
+    display: flex;
+    align-items: center;
+    width: 130px;
+    height: 39px;
+    padding: 0.2rem 1rem;
+    border-radius: 25px;
+    background-color: #225377;
+    border: 3px solid #225377;
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
   }
 
   .content {
@@ -41,86 +120,27 @@ const Section = styled.section`
         font-size: 2rem;
         margin-bottom: 2rem;
         color: white;
+        animation: ${fadeIn} 1s ease-out;
       }
     }
 
-    .planner {
-      position: absolute;
-      bottom: -2rem;
-      right: 0;
-      background-color: white;
-      padding: 2rem;
-      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-
-      form {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: flex-end;
-        gap: 1rem;
-
-        .row {
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          text-align: start;
-
-          label {
-            font-size: 0.7rem;
-            color: var(--secondary-text);
-          }
-
-          input[type="date"]::-webkit-calendar-picker-indicator {
-            cursor: pointer;
-            filter: invert(58%) sepia(69%) saturate(2588%) hue-rotate(325deg)
-              brightness(105%) contrast(101%);
-          }
-
-          input:focus {
-            outline: none;
-          }
-
-          input,
-          select {
-            border: none;
-            width: 100%;
-            color: var(--primary-color);
-            margin-top: 0.5rem;
-            background-color: white;
-            font-size: 1rem;
-            border-bottom: 1px solid #f5ebe9;
-            padding-bottom: 0.3rem;
-          }
+    @media screen and (min-width: 280px) and (max-width: 1080px) {
+      .background {
+        img {
+          height: 50vh;
         }
       }
-    }
-  }
+      .content {
+        .info {
+          margin-left: 1rem;
 
-  @media screen and (min-width: 280px) and (max-width: 1080px) {
-    .background {
-      img {
-        height: 50vh;
-      }
-    }
-    .content {
-      .info {
-        margin-left: 1rem;
-
-        h1 {
-          font-size: 1.5rem;
-          margin-bottom: 1rem;
-          padding-right: 30px;
-
+          h1 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            padding-right: 30px;
+          }
         }
-      }
 
-      .planner {
-        position: initial;
-        margin: 2rem;
-        form {
-          align-items: flex-start;
-          flex-direction: column;
-        }
       }
     }
   }

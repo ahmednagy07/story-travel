@@ -1,16 +1,10 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { MdClose } from "react-icons/md";
 import Logo from "../assets/logo2.gif";
 
 export default function Navbar() {
-  const [isNavOpen, setIsNavOpen] = useState(false);
 
-  const toggleNav = () => {
-    setIsNavOpen(!isNavOpen);
-  };
 
   const handleWhatsappClick = () => {
     const message = "مرحبا .. انا مهتم بخدماتكم";
@@ -19,17 +13,15 @@ export default function Navbar() {
       message
     )}`;
 
-    // Open WhatsApp link in a new tab
     window.open(whatsappURL, '_blank');
   };
 
   const handlePhoneClick = () => {
-    // Initiate a phone call
     window.location.href = 'tel:+96522281215';
   };
 
   return (
-    <Container state={isNavOpen ? 1 : 0}>
+    <Container>
       <div className="btn-container">
         <button className="btn" onClick={handlePhoneClick}>
           <FaPhoneAlt className="icon" />
@@ -38,7 +30,7 @@ export default function Navbar() {
         <FaWhatsapp onClick={handleWhatsappClick} className="whatsapp-icon" />
       </div>
 
-      <div className={`links ${isNavOpen ? "show" : ""}`}>
+      <div className="links">
         <ul>
           <li>
             <a href="#blog">أراء عملائنا</a>
