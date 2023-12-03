@@ -75,6 +75,7 @@ const Section = styled.section`
     color: #fff;
     display: flex;
     jsutify-content: center;
+    align-items: center;
     width: 135px;
     height: 40px;
     padding: 0.2rem 1rem;
@@ -95,6 +96,7 @@ const Section = styled.section`
   .btn {
     display: flex;
     jsutify-content: center;
+    align-items: center;
     width: 135px;
     height: 40px;
     padding: 0.2rem 1rem;
