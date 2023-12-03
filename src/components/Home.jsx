@@ -74,9 +74,9 @@ const Section = styled.section`
     margin-left: 10px;
     color: #fff;
     display: flex;
-    align-items: center;
+    jsutify-content: center;
     width: 135px;
-    height: 39px;
+    height: 40px;
     padding: 0.2rem 1rem;
     border-radius: 25px;
     background-color: #a7cf4a;
@@ -94,9 +94,9 @@ const Section = styled.section`
 
   .btn {
     display: flex;
-    align-items: center;
+    jsutify-content: center;
     width: 135px;
-    height: 39px;
+    height: 40px;
     padding: 0.2rem 1rem;
     border-radius: 25px;
     background-color: #225377;
@@ -125,10 +125,12 @@ const Section = styled.section`
 
     @media screen and (min-width: 280px) and (max-width: 1080px) {
       .whatsapp-btn {
+        width: 130px;
         font-size: 1rem;
       }
 
       .btn {
+        width: 130px;
         font-size: 1rem;
       }
 
