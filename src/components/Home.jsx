@@ -2,7 +2,6 @@ import styled, { keyframes } from "styled-components";
 import HeroImage from "../assets/plane.jpg";
 import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 
-
 export default function Home() {
   const handleWhatsappClick = () => {
     const message = "مرحبا .. انا مهتم بخدماتكم";
@@ -70,7 +69,7 @@ const Section = styled.section`
     align-items: center;
     justify-content: center;
   }
-  
+
   .whatsapp-btn {
     margin-left: 10px;
     color: #fff;
@@ -125,6 +124,14 @@ const Section = styled.section`
     }
 
     @media screen and (min-width: 280px) and (max-width: 1080px) {
+      .whatsapp-btn {
+        font-size: 1rem;
+      }
+
+      .btn {
+        font-size: 1rem;
+      }
+
       .background {
         img {
           height: 50vh;
@@ -140,7 +147,6 @@ const Section = styled.section`
             padding-right: 30px;
           }
         }
-
       }
     }
   }
